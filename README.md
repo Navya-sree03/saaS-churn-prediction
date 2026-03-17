@@ -19,8 +19,44 @@ subscription so the business can take action early.
 - Docker (Deployment)
 
 ## 📁 Project Structure
-(paste your folder structure here)
+## 📁 Project Structure
 
+saas-churn-prediction/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   ├── 01_EDA.ipynb
+│   ├── 02_preprocessing.ipynb
+│   ├── 03_model_building.ipynb
+│   ├── 04_model_evaluation.ipynb
+│   └── 05_shap_explainability.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model_training.py
+│   └── predict.py
+│
+├── models/
+│   └── xgboost_model.pkl
+│
+├── app/
+│   └── app.py
+│
+├── dashboard/
+│   └── streamlit_app.py
+│
+├── tests/
+│   └── test_predict.py
+│
+├── .gitignore
+├── requirements.txt
+├── README.md
+└── Dockerfile
 ## 🚀 How to Run
 (add steps to run locally)
 
